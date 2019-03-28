@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="cagf" basedir="." default="run.persistence.export">
+
+	<property file="build.properties"></property>
+
+    <path id="ant.run.lib.path">
+        <pathelement path="${classes}"></pathelement>
+        <fileset dir="${lib}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="set.hibernate.mappfiles">
+        <fileset id="hebernate.mapping.files" dir=".">
+            <include name="**/*.hbm.xml"/>
+        </fileset>
+    	<!--路径转换　　集合转换未以空格分割的路径-->
+    	<pathconvert property="hibernate.mapping" refid="hebernate.mapping.files" pathsep=" "></pathconvert>
+    </target>
+
+	<taskdef name="hibernatetool" classname="org.hibernate.tool.ant.HibernateToolTask" classpathref="ant.run.lib.path">
+	</taskdef>
+	
+    <target name="run.persistence.export" depends="set.hibernate.mappfiles">
+        <mkdir dir="${classes}"></mkdir>
+    	<!--generate beans -->
+        <hibernatetool>
+            <configuration configurationfile="${dbconfig}/hibernate.cfg.xml"></configuration>
+            <hbm2java  destdir="${src}"></hbm2java>
+        	<hbm2ddl destdir="${dbschema}" export="false" outputfilename="db.sql"></hbm2ddl>
+        </hibernatetool>
+    	
+    	<!--generate daos -->
+    	<java classname="com.cagf.tool.hbm2dao.CodeGenerator" fork="true" failonerror="true">
+    		<classpath refid="ant.run.lib.path"></classpath>
+    		<arg line="--rootpath=${rootPath}"/><!--模板文件-->
+    		<arg line="--output=${src}"/>
+    		<arg line="${hibernate.mapping}"/>
+    	</java>
+    	
+    	<!--generate daoimpls -->
+    	<java classname="com.cagf.tool.hbm2daoimpl.CodeGenerator" fork="true" failonerror="true">
+    		<classpath refid="ant.run.lib.path"></classpath>
+    		<arg line="--rootpath=${rootPath}"/><!--模板文件-->
+    		<arg line="--output=${src}"/>
+    		<arg line="${hibernate.mapping}"/>
+    	</java>
+    </target>
+
+
+</project>
