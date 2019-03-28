@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "file:/home/battlecall/myeclipse/plugins/com.genuitec.eclipse.j2eedt.core_13.0.0.me201712190632/catalog-dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    
+            <!--jdbc必须-->
+        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+        <!--1read uncommited 2 Read committed 4  8-->
+        <!--<property name="hibernate.connection.isolation"></property>-->
+
+        <!--<property name="format_sql">true</property>-->
+        <!--方言-->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!--显示heibernate自动生产的sql-->
+        <property name="show_sql">true</property>
+        
+
+        <mapping resource="Person.hbm.xml"></mapping>
+
+    </session-factory>
+</hibernate-configuration>
+
+<!--乐观锁 version timestamp 类似CVS 的版本控制-->
+<!--悲观锁  底层机制-->
