@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "file:/home/battlecall/myeclipse/plugins/com.genuitec.eclipse.j2eedt.core_13.0.0.me201712190632/catalog-dtd/hibernate-configuration-3.0.dtd">
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
     
@@ -23,6 +23,7 @@
         
 
         <mapping resource="Person.hbm.xml"></mapping>
+        <mapping resource="People.hbm.xml"></mapping>
 
     </session-factory>
 </hibernate-configuration>
