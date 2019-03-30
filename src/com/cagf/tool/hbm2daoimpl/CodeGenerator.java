@@ -3,6 +3,8 @@ package com.cagf.tool.hbm2daoimpl;
 public class CodeGenerator {
 	private static String outPutPath="";
 	
+	private static final String OUT_PUT_PATH_KEY = "--output=";
+	
 	public static void main(String[] args){
 		int count = 0;
 		
@@ -12,10 +14,10 @@ public class CodeGenerator {
 			
 			System.out.println("tmp:"+tmp);
 			
-			if(tmp.startsWith("--output")){
+			if(tmp.startsWith(OUT_PUT_PATH_KEY)){
 				System.out.println("output ...");
-				outPutPath = tmp.substring(9);
-			}else if(tmp.startsWith("--rootpath")){
+				outPutPath = tmp.substring(OUT_PUT_PATH_KEY.length());
+			}else if(tmp.startsWith("--rootpath=")){
 				System.out.println("rootpath ...");
 				Configer.getInstance().setDaoTemplatePath(tmp.substring(11));
 			}else{

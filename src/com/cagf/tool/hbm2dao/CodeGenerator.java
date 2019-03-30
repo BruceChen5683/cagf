@@ -12,10 +12,10 @@ public class CodeGenerator {
 			
 			System.out.println("tmp:"+tmp);
 			
-			if(tmp.startsWith("--output")){
+			if(tmp.startsWith("--output=")){
 				System.out.println("output ...");
 				outPutPath = tmp.substring(9);
-			}else if(tmp.startsWith("--rootpath")){
+			}else if(tmp.startsWith("--rootpath=")){
 				System.out.println("rootpath ...");
 				Configer.getInstance().setDaoTemplatePath(tmp.substring(11));
 			}else{

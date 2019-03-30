@@ -45,6 +45,17 @@
     		<arg line="--output=${src}"/>
     		<arg line="${hibernate.mapping}"/>
     	</java>
+    	
+    	<!--generate infrastructure -->
+    	<java classname="com.cagf.tool.hbm2xml.infrastructure.CodeGenerator" fork="true" failonerror="true">
+    		<classpath refid="ant.run.lib.path"></classpath>
+    		<arg line="--filename=${infrastructureXmlName}"/><!-- -->
+    		<arg line="--output=${springConfigLocation}"/><!--spring 输出位置 -->
+    		<arg line="--dbProperty=${dbProperty}"/>
+    		<arg line="--hibernateProperty=${hibernateProperty}"/>
+    		<arg line="--projectDirectory=${projectDirectory}"/>
+    		<arg line="${hibernate.mapping}"/>
+		</java>
     </target>
 
 
