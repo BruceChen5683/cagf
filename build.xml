@@ -73,6 +73,14 @@
     	    		<arg line="--output=${src}"/>
     	    		<arg line="${hibernate.mapping}"/>
     	</java>
+    	
+    	<!-- generate serviceimpl -->
+    	<java classname="com.cagf.tool.hbm2serviceimpl.CodeGenerator" fork="true" failonerror="true">
+    	    		<classpath refid="ant.run.lib.path"></classpath>
+    	    		<arg line="--rootpath=${rootPath}"/><!--模板文件-->
+    	    		<arg line="--output=${src}"/>
+    	    		<arg line="${hibernate.mapping}"/>
+    	</java>
     </target>
 
 
