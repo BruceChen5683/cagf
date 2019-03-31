@@ -1,0 +1,9 @@
+*.class
+.classpath
+.project
+src/com/battlecall
+src/ml
+#*.sql
+WebRoot/WEB-INF/applicationContext-infrasture.xml
+.settings
+dbschema/

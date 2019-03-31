@@ -11,7 +11,6 @@ public class CodeGenerator {
 	private static String dbProperty;
 
 	private static String hibernateProperty;
-
 	private static String projectDirectory;
 
 	private static List<String> hbmFiles = new ArrayList<String>();
