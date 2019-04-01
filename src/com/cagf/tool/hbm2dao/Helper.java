@@ -3,7 +3,6 @@ package com.cagf.tool.hbm2dao;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.StringTokenizer;
