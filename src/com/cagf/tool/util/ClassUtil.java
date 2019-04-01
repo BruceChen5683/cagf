@@ -21,6 +21,9 @@ public class ClassUtil
 			{
 				fields[i][0] = f[i].getName();
 				fields[i][1] = f[i].getType().getName();
+				if(fields[i][1].equals("[B")){
+					fields[i][1] = "byte[]";
+				}
 			}
 
 			return fields;
