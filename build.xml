@@ -98,6 +98,15 @@
     	    		<arg line="--output=${src}"/>
     	    		<arg line="${hibernate.mapping}"/>
     	</java>
+    	
+		<!-- generating spring action config -->
+		<java classname="com.cagf.tool.hbm2xml.action.CodeGenerator" fork="true" failonerror="true">
+			<classpath refid="ant.run.lib.path"></classpath>
+			<arg line="--output=${springConfigLocation}"/>
+			<arg line="--filename=${actionXmlName}"/>
+			<arg line="--projectDirectory=${projectDirectory}"/>
+			<arg line="${hibernate.mapping}"/>
+		</java>	
     </target>
 
 
