@@ -81,6 +81,16 @@
     	    		<arg line="--output=${src}"/>
     	    		<arg line="${hibernate.mapping}"/>
     	</java>
+    	
+    	
+    	<!--generate spring dao config-->
+    	<java classname="com.cagf.tool.hbm2xml.service.CodeGenerator" fork="true" failonerror="true">
+    		<classpath refid="ant.run.lib.path"></classpath>
+    		<arg line="--filename=${serviceXmlName}"/><!--模板文件-->
+    		<arg line="--output=${springConfigLocation}"/>
+    		<arg line="--projectDirectory=${projectDirectory}"/>
+    		<arg line="${hibernate.mapping}"/>
+    	</java>
     </target>
 
 

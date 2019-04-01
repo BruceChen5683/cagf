@@ -7,3 +7,4 @@ src/ml
 WebRoot/WEB-INF/applicationContext-infrasture.xml
 .settings
 dbschema/
+WebRoot/WEB-INF/applicationContext-*.xml
