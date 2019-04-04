@@ -11,7 +11,7 @@
     </path>
 
     <target name="set.hibernate.mappfiles">
-        <fileset id="hebernate.mapping.files" dir=".">
+        <fileset id="hebernate.mapping.files" dir="${dbconfig}">
             <include name="**/*.hbm.xml"/>
         </fileset>
     	<!--路径转换　　集合转换未以空格分割的路径-->
