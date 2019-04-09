@@ -73,7 +73,7 @@ public class Helper
 				String generalPackage = theBeanName.substring(0, theBeanName
 						.lastIndexOf(".", theBeanName.lastIndexOf(".") - 1));
 
-				String daoClassName = generalPackage + ".dao.impl." + beanName
+				String daoClassName = generalPackage + ".impl." + beanName
 						+ "DaoImpl";
 
 				Element bean = new Element("bean", n1);

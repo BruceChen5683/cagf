@@ -138,7 +138,7 @@ public class Helper
 		String str = packageData.substring(0, packageData.lastIndexOf(".",
 				packageData.lastIndexOf(".") - 1)); // general package
 
-		String daoPackage = str + ".dao." + className + "DAO";
+		String daoPackage = str + ".dao." + className + "Dao";
 
 		templateContent = templateContent.replaceAll(importDAO, daoPackage);
 

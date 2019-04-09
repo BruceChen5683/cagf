@@ -3,15 +3,17 @@
 
 	<property file="build.properties"></property>
 
-    <path id="ant.run.lib.path">
-        <pathelement path="${classes}"></pathelement>
-        <fileset dir="${lib}">
-            <include name="**/*.jar"/>
-        </fileset>
-    </path>
+	
+		<path id="ant.run.lib.path">
+			<pathelement path="${classes}"/>
+			<fileset dir="${lib}">
+				<include name="**/*.jar"/>
+			</fileset>
+		</path>
 
+	
     <target name="set.hibernate.mappfiles">
-        <fileset id="hebernate.mapping.files" dir="${dbconfig}">
+        <fileset id="hebernate.mapping.files" dir="${src}">
             <include name="**/*.hbm.xml"/>
         </fileset>
     	<!--路径转换　　集合转换未以空格分割的路径-->
@@ -26,7 +28,7 @@
     	<!--generate beans -->
         <hibernatetool>
             <configuration configurationfile="${dbconfig}/hibernate.cfg.xml"></configuration>
-            <hbm2java  destdir="${src}"></hbm2java>
+            <hbm2java  jdk5="true" destdir="${src}"></hbm2java>
         	<hbm2ddl destdir="${dbschema}" export="false" outputfilename="db.sql"></hbm2ddl>
         </hibernatetool>
     	

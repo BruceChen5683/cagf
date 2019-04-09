@@ -77,7 +77,7 @@ public class Helper {
 	}
 	
 	private String getDaoFileName(String hbm){
-		return this.getClassName(hbm)+"DAO.java";
+		return this.getClassName(hbm)+"Dao.java";
 	}
 	
 	private String doReplace(String templateContent,String packageData,String importData,String className,String date){
