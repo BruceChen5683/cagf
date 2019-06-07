@@ -2,6 +2,55 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
-
+ <package name="People" extends="struts-default" namespace="/People" strict-method-invocation="true">
+  <action name="addPeople" class="addPeople">
+   <result name="success" type="redirectAction">
+    <param name="actionName">listPeople</param>
+   </result>
+  </action>
+  <action name="listPeople" class="listPeople">
+   <result name="success">listPeople.jsp</result>
+  </action>
+  <action name="deletePeople" class="deletePeople">
+   <result name="success" type="redirectAction">
+    <param name="actionName">listPeople</param>
+    <param name="start">${start}</param>
+    <param name="range">${range}</param>
+   </result>
+  </action>
+  <action name="updatePPeople" class="updatePPeople">
+   <result name="success">updatePeople.jsp</result>
+  </action>
+  <action name="updatePeople" class="updatePeople">
+   <result name="success" type="redirectAction">
+    <param name="actionName">listPeople</param>
+   </result>
+  </action>
+ </package>
+ <package name="Person" extends="struts-default" namespace="/Person" strict-method-invocation="true">
+  <action name="addPerson" class="addPerson">
+   <result name="success" type="redirectAction">
+    <param name="actionName">listPerson</param>
+   </result>
+  </action>
+  <action name="listPerson" class="listPerson">
+   <result name="success">listPerson.jsp</result>
+  </action>
+  <action name="deletePerson" class="deletePerson">
+   <result name="success" type="redirectAction">
+    <param name="actionName">listPerson</param>
+    <param name="start">${start}</param>
+    <param name="range">${range}</param>
+   </result>
+  </action>
+  <action name="updatePPerson" class="updatePPerson">
+   <result name="success">updatePerson.jsp</result>
+  </action>
+  <action name="updatePerson" class="updatePerson">
+   <result name="success" type="redirectAction">
+    <param name="actionName">listPerson</param>
+   </result>
+  </action>
+ </package>
 </struts>
 
