@@ -1,0 +1,65 @@
+<component name="libraryTable">
+  <library name="antlr-2.7.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/temp/antlr-2.7.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/cglib-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.net.sf.cglib-2.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.org.aopalliance-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.org.apache.commons.fileupload-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.org.apache.commons.httpclient-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.org.apache.commons.logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.org.apache.log4j-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/com.springsource.org.codehaus.jackson.mapper-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/commons-collections-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/commons-dbcp-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/commons-fileupload-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/commons-io-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/commons-logging-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/commons-pool-1.5.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/ehcache-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/ejb3-persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/freemarker-2.3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/hibernate3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/hibernate-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/hibernate-commons-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/hibernate-entitymanager.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/hibernate-jpa-2.0-api-1.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/hibernate-tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/hibernate-validator.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/javassist-3.9.0.GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/javax.servlet-api-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/jdom.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/jta-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/log4j-1.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/mysql-connector-java-5.0.3-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/ognl-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.aop-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.asm-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.aspects-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.beans-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.context-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.core-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.expression-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.instrument.tomcat-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.instrument-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.jdbc-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.orm-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.oxm-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.transaction-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.web.portlet-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.web.servlet-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.web.struts-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/org.springframework.web-3.0.1.RELEASE-A.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/slf4j-api-1.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/slf4j-log4j12-1.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/struts2-core-2.2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/struts2-spring-plugin-2.2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/temp/xwork-core-2.2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

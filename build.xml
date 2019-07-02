@@ -47,7 +47,7 @@
     		<arg line="--output=${src}"/>
     		<arg line="${hibernate.mapping}"/>
     	</java>
-    	
+
     	<!--generate infrastructure -->
     	<java classname="com.cagf.tool.hbm2xml.infrastructure.CodeGenerator" fork="true" failonerror="true">
     		<classpath refid="ant.run.lib.path"></classpath>
@@ -58,7 +58,7 @@
     		<arg line="--projectDirectory=${projectDirectory}"/>
     		<arg line="${hibernate.mapping}"/>
 		</java>
-    	
+
     	<!--generate spring dao config-->
     	<java classname="com.cagf.tool.hbm2xml.dao.CodeGenerator" fork="true" failonerror="true">
     		<classpath refid="ant.run.lib.path"></classpath>
@@ -67,7 +67,7 @@
     		<arg line="--projectDirectory=${projectDirectory}"/>
     		<arg line="${hibernate.mapping}"/>
     	</java>
-    	
+
     	<!-- generate service -->
     	<java classname="com.cagf.tool.hbm2service.CodeGenerator" fork="true" failonerror="true">
     	    		<classpath refid="ant.run.lib.path"></classpath>
@@ -75,7 +75,7 @@
     	    		<arg line="--output=${src}"/>
     	    		<arg line="${hibernate.mapping}"/>
     	</java>
-    	
+
     	<!-- generate serviceimpl -->
     	<java classname="com.cagf.tool.hbm2serviceimpl.CodeGenerator" fork="true" failonerror="true">
     	    		<classpath refid="ant.run.lib.path"></classpath>
@@ -83,7 +83,7 @@
     	    		<arg line="--output=${src}"/>
     	    		<arg line="${hibernate.mapping}"/>
     	</java>
-    	
+
     	<!--generate spring service config-->
     	<java classname="com.cagf.tool.hbm2xml.service.CodeGenerator" fork="true" failonerror="true">
     		<classpath refid="ant.run.lib.path"></classpath>
@@ -92,13 +92,13 @@
     		<arg line="--projectDirectory=${projectDirectory}"/>
     		<arg line="${hibernate.mapping}"/>
     	</java>
-    	
+
     	<!-- do compile -->
     	<!-- action中用到反射，需要获取到Class-->
-		<javac srcdir="${src}" destdir="${classes}" nowarn="on" debug="${java.debug}" 
+		<javac srcdir="${src}" destdir="${classes}" nowarn="on" debug="${java.debug}"
 			classpathref="ant.run.lib.path">
 		</javac>
-    	
+
     	<!-- generate action -->
     	<java classname="com.cagf.tool.hbm2action.CodeGenerator" fork="true" failonerror="true">
     	    		<classpath refid="ant.run.lib.path"></classpath>
@@ -106,7 +106,7 @@
     	    		<arg line="--output=${src}"/>
     	    		<arg line="${hibernate.mapping}"/>
     	</java>
-    	
+
 		<!-- generating spring action config -->
 		<java classname="com.cagf.tool.hbm2xml.action.CodeGenerator" fork="true" failonerror="true">
 			<classpath refid="ant.run.lib.path"></classpath>
@@ -114,8 +114,8 @@
 			<arg line="--filename=${actionXmlName}"/>
 			<arg line="--projectDirectory=${projectDirectory}"/>
 			<arg line="${hibernate.mapping}"/>
-		</java>	
-    	
+		</java>
+
 		<!-- generating struts.xml -->
 		<java classname="com.cagf.tool.hbm2xml.struts.CodeGenerator" fork="true" failonerror="true">
 			<classpath refid="ant.run.lib.path"></classpath>
@@ -124,15 +124,15 @@
 			<arg line="--projectDirectory=${projectDirectory}"/>
 			<arg line="${hibernate.mapping}"/>
 		</java>
-    	
+
     	<java classname="com.cagf.tool.hbm2jsp.CodeGenerator" fork="true" failonerror="true">
 			<classpath refid="ant.run.lib.path"></classpath>
 			<arg line="--output=${projectDirectory}/${web}"/>
 			<arg line="--rootpath=${rootPath}"/>
 			<arg line="${hibernate.mapping}"/>
 		</java>
-    	
-    	<javac srcdir="${src}" destdir="${classes}" nowarn="on" debug="${java.debug}" 
+
+    	<javac srcdir="${src}" destdir="${classes}" nowarn="on" debug="${java.debug}"
     				classpathref="ant.run.lib.path">
 		</javac>
     </target>
