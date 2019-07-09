@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    <bean id="addPeople" class="ml.battlecall.action.people.AddPeople" scope="prototype">
+        <property name="service" ref="peopleService" />
+    </bean>
+    <bean id="listPeople" class="ml.battlecall.action.people.ListPeople" scope="prototype">
+        <property name="service" ref="peopleService" />
+    </bean>
+    <bean id="updatePPeople" class="ml.battlecall.action.people.UpdatePPeople" scope="prototype">
+        <property name="service" ref="peopleService" />
+    </bean>
+    <bean id="updatePeople" class="ml.battlecall.action.people.UpdatePeople" scope="prototype">
+        <property name="service" ref="peopleService" />
+    </bean>
+    <bean id="deletePeople" class="ml.battlecall.action.people.DeletePeople" scope="prototype">
+        <property name="service" ref="peopleService" />
+    </bean>
+    <bean id="addPerson" class="com.battlecall.spring.hibernate.action.person.AddPerson" scope="prototype">
+        <property name="service" ref="personService" />
+    </bean>
+    <bean id="listPerson" class="com.battlecall.spring.hibernate.action.person.ListPerson" scope="prototype">
+        <property name="service" ref="personService" />
+    </bean>
+    <bean id="updatePPerson" class="com.battlecall.spring.hibernate.action.person.UpdatePPerson" scope="prototype">
+        <property name="service" ref="personService" />
+    </bean>
+    <bean id="updatePerson" class="com.battlecall.spring.hibernate.action.person.UpdatePerson" scope="prototype">
+        <property name="service" ref="personService" />
+    </bean>
+    <bean id="deletePerson" class="com.battlecall.spring.hibernate.action.person.DeletePerson" scope="prototype">
+        <property name="service" ref="personService" />
+    </bean>
+</beans>
+

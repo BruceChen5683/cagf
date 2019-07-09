@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/IdeaProjects/cagf/WebRoot/WebRoot.iml" filepath="$USER_HOME$/IdeaProjects/cagf/WebRoot/WebRoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cagf.iml" filepath="$PROJECT_DIR$/.idea/cagf.iml" />
     </modules>
   </component>
