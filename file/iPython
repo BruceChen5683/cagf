@@ -1,0 +1,8 @@
+iPython
+
+%bookmark
+
+反斜杠可以用来转义，使用r可以让反斜杠不发生转义。。 如 r"this is a line with \n" 则\n会显示，并不是换行。
+
+
+Python可以在同一行中使用多条语句，语句之间使用分号(;)分割

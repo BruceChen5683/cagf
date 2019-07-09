@@ -1,0 +1,40 @@
+FAQ:
+
+1. Error running 'oa': Address localhost:8080 is already in use
+change Http port
+
+2. [RMI TCP Connection(2)-127.0.0.1] org.apache.catalina.core.StandardContext.listenerStart Error configuring application listener of class [org.springframework.web.context.ContextLoaderListener]
+add missing libs
+
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>   ----->>>>>         <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
+
+
+3. ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+   ERROR Dispatcher Dispatcher initialization failed
+
+4. 	Caused by: java.lang.IllegalArgumentException: Javassist library is missing in classpath! Please add missed dependency!
+
+
+5.	jsp   --->>>  action
+	form表单  action--->跳转页面  
+		  method--->http请求方法  get/post
+
+	interface、impl、service、 使用
+
+	LoginAction 如何配置--->>>
+		struts.xml    struts tag +++ package tag +++ action tag最後action需要增加result相對應的success處理jsp
+
+	jsp->action传值  
+		a.----->>>>> ActionContext.getContext().getParameters().get("key").getValue()
+
+
+6.	No result defined for action com.cjl.www.action.LoginAction and result success
+
+
+7.   struts-tags
+
+8.	spring struts2结合
+
+9.	could not fetch initial value for increment gener 
+		没有通过SchemaExport 生成相应的表
+10.	Spring Application Context添加所有的相关xml

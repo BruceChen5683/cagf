@@ -1,0 +1,9 @@
+ar: `u' modifier ignored since `D' is the default (see `U')
+/bin/bash build-scripts/updaterev.sh
+/bin/bash build-scripts/mkinstalldirs /usr/local/bin
+/usr/bin/install -c -m 755 sdl2-config /usr/local/bin/sdl2-config
+/usr/bin/install: 无法创建普通文件'/usr/local/bin/sdl2-config': 权限不够
+Makefile:157: recipe for target 'install-bin' failed
+make: *** [install-bin] Error 1
+
+--->sudo make install
